@@ -1,17 +1,15 @@
-# Lab 5: Machine Learning for Intelligent Decision Making (Decision Tree)
+# Lab 5: Supervised Machine Learning & Neural Networks
 
 ## 1. Aim / Problem Statement
-To implement a **Decision Tree Classifier** for **Student Placement Prediction** and evaluate its performance using standard classification metrics and tree visualization[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span).
+To implement core supervised learning models and artificial neurons across 4 standalone Python programs:
+1. **Linear Regression (`1_LinearRegression.py`):** Predict continuous exam scores from study hours using Ordinary Least Squares (OLS).
+2. **K-Nearest Neighbors (`2_KNN_Classifier.py`):** Classify data samples based on Euclidean distance and majority voting ($K=3$).
+3. **Single-Layer Perceptron (`3_Perceptron_LogicGate.py`):** Train weights and bias using the Perceptron Learning Rule to simulate an `AND` logic gate.
+4. **Decision Tree Classifier (`4_DecisionTree.py`):** Build a rule-based classification tree to partition feature space and predict target classes.
 
-## 2. Algorithm
-1. **Feature Matrix Creation:** Extract predictor variables (`CGPA`, `IQ`, `Internships`) and target label (`Placed`)[span_9](start_span)[span_9](end_span).
-2. **Train-Test Split:** Partition the dataset into 75% training and 25% testing sets.
-3. **Model Training:** Fit a `DecisionTreeClassifier` using Gini Impurity (`criterion='gini'`, `max_depth=3`) to learn hierarchical decision rules[span_10](start_span)[span_10](end_span).
-4. **Evaluation & Visualization:** Generate predictions on test samples, compute the Confusion Matrix and Classification Report, and plot the trained decision tree structure[span_11](start_span)[span_11](end_span).
-
-## 3. Results / Output
-* **Sample Test Predictions:** Accurately classified placed and non-placed students based on `CGPA` and `Internships` thresholds.
-* **Confusion Matrix:**
-  ```text
-  [[2 0]
-   [0 2]]
+## 2. How to Run
+bash
+python 1_LinearRegression.py
+python 2_KNN_Classifier.py
+python 3_Perceptron_LogicGate.py
+python 4_DecisionTree.py
